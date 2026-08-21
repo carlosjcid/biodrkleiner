@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Kleiner Pinheiro | Regência Biológica</title>
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Fontes Oficiais do Branding (Quiet Luxury) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Configurações do Design System -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#09090b',       /* Zinc 950 - Fundo Geral */
+              panel: '##0F1B14',    /* Zinc 900 - Fundo dos Botões */
+              accent: '#b4975a',   /* Dourado Escovado / Amber */
+              border: '#27272a',   /* Zinc 800 - Bordas */
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    body { 
+      background-color: #09090b; 
+      color: #fafafa; 
+      -webkit-font-smoothing: antialiased; 
+    }
+    
+    /* Efeito de Fade In nos elementos ao carregar a página */
+    .fade-in {
+      animation: fadeIn 0.8s ease-in-out forwards;
+      opacity: 0;
+    }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-between p-6">
+  
+  <main class="w-full max-w-md flex flex-col items-center text-center mt-6">
+    
+    <!-- Avatar do Dr. K -->
+    <div class="w-24 h-24 rounded-full border-[1.5px] border-brand-accent overflow-hidden mb-5 shadow-lg fade-in">
+      <img src="./assets/Bio.webp" alt="Dr. Kleiner Pinheiro" class="w-full h-full object-cover">
+    </div>
+    
+    <!-- Identificação e Autoridade -->
+    <h1 class="font-serif text-2xl font-semibold tracking-wide text-zinc-50 fade-in delay-1">Dr. Kleiner Pinheiro</h1>
+    <p class="font-sans text-xs text-zinc-400 mt-1.5 uppercase tracking-[0.2em]">Medicina Funcional & Longevidade</p>
+    <p class="font-sans text-[11px] text-brand-accent mt-1 font-medium fade-in delay-1">CRM-GO 15.378 · 1º Certificado IFM/EUA (2018)</p>
+
+    <!-- Árvore de Links Parametrizados -->
+    <div class="w-full mt-8 space-y-3.5 fade-in delay-2">
+      
+      <!-- Link 1: O Funil Específico de Energia -->
+      <a href="https://energia.drkleinerpinheiro.com/?utm_source=instagram&utm_medium=bio&utm_campaign=btn_bio_energia" target="_blank" 
+         class="block w-full py-4 px-4 bg-brand-panel border border-brand-border hover:border-brand-accent rounded-xl text-[13px] font-sans font-medium tracking-wide transition-all duration-300 shadow-sm flex items-center justify-center gap-2 group">
+        <span class="text-brand-accent group-hover:scale-110 transition-transform"></span>
+        Investigação de Cansaço & Sono
+      </a>
+
+      <!-- Link 2: O Contato Direto e Qualificado -->
+      <a href="https://wa.me/5562XXXXXXXXX?text=Olá!%20Acessei%20o%20Instagram%20do%20Dr.%20Kleiner%20e%20gostaria%20de%20informações%20sobre%20agendamento." target="_blank" 
+         class="block w-full py-4 px-4 bg-brand-panel border border-brand-border hover:border-brand-accent rounded-xl text-[13px] font-sans font-medium tracking-wide transition-all duration-300 shadow-sm flex items-center justify-center gap-2 group">
+        <span class="text-zinc-400 group-hover:text-brand-accent transition-colors"></span>
+        Assessoria & Agendamento
+      </a>
+
+      <!-- Link 3: Posicionamento / Site Institucional -->
+      <a href="https://www.drkleiner.com.br/?utm_source=instagram&utm_medium=bio" target="_blank" 
+         class="block w-full py-4 px-4 bg-brand-panel border border-brand-border hover:border-brand-accent rounded-xl text-[13px] font-sans font-medium tracking-wide transition-all duration-300 shadow-sm flex items-center justify-center gap-2 group">
+        <span class="text-zinc-400 group-hover:text-brand-accent transition-colors"></span>
+        Conheça a Abordagem Clínica
+      </a>
+
+      <!-- Link 4: Tráfego Físico (Consistência NAP) -->
+      <a href="https://maps.google.com/?q=Integra+INGOH+Goiania" target="_blank" 
+         class="block w-full py-4 px-4 bg-brand-panel border border-brand-border hover:border-brand-accent rounded-xl text-[13px] font-sans font-medium tracking-wide text-zinc-300 transition-all duration-300 shadow-sm flex items-center justify-center gap-2 group">
+        <span class="text-zinc-400 group-hover:text-brand-accent transition-colors"></span>
+        Localização (Íntegra INGOH)
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Rodapé Institucional de Compliance -->
+  <footer class="text-center font-sans mt-10 mb-2 max-w-xs space-y-1.5 fade-in delay-3">
+    <p class="text-[10px] text-brand-accent uppercase tracking-wider font-medium">Atendimento Particular & Reembolso</p>
+    <p class="text-[10px] text-zinc-500">Av. República do Líbano, 1770 - St. Oeste</p>
+    <p class="text-[9px] text-zinc-600 mt-2">Conteúdo informativo. Consulta não substitui avaliação.</p>
+  </footer>
+
+</body>
+</html>
